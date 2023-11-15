@@ -1,0 +1,221 @@
+*{
+    font-family: 'HelveticaNeue', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Начал в 20:20 */
+
+header{
+    width: 100%;
+    height: 50rem;
+    background-image: url(../img/header_BG.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.yellow-blur{
+    background-color: rgba(254, 207, 0, 0.83);
+    width: 100%;
+    height: 100%;
+}
+
+.header-left, .header-right, .header-person{
+    position: absolute;
+    top: 0;
+    z-index:1;
+}
+
+.header-right{
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 800px;
+}
+
+.header-person{
+    left: auto;
+    right: 5rem;
+    top: 7rem;
+    bottom: 0;
+}
+
+.header-content{
+    z-index: 100;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    
+}
+
+header a{
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #18193F;
+    font-family: 'HelveticaNeue bold';
+    
+}
+/* AND THE WATER'S RISING */
+
+header h1{
+    width: 60%;
+    font-size: 3em;
+    font-family: 'Museo';
+}
+
+.next{
+    font-family: "Museo";
+    font-size: 2em;
+    width: 50%;
+}
+
+.stock{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.stock-content{
+    margin-right: 2rem;
+    padding: 0.1rem 1rem;
+    border-radius: 1rem;
+    width: 15rem;
+    background-color: rgba(66, 66, 66, 0.795);
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.stock-content p{
+    margin: auto 0 auto 0;
+    color: white;
+    font-size: 4rem;
+}
+
+.stock-content-smaller p{
+    font-size: 1.4rem;
+}
+
+.stock-content-smaller b{
+    color: #D2E400;
+    font-size: 1rem;
+}
+
+.stock-content-smaller{
+    margin: 1rem;
+    
+    
+    font-size: 2rem;
+}
+
+.buttons{
+    margin-top: 3rem;
+}
+
+.button1,.button2{
+    width: 17rem;
+    height: 4rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    
+}
+
+.button1{
+    background-color: #E10000;
+    color: white;
+    border: none;
+}
+
+.button2{
+    background-color: #e1000000;
+    color: black;
+}
+
+/* Секция */
+
+.make_choice{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.make_choice h1{
+    font-size: 3rem;
+
+}
+
+.choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.choice{
+    border: 1px solid #4848485b;
+    width: 20%;
+    padding: 0 2rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Шрифты */
+
+
+@font-face{
+    font-family: 'bebasneue';
+    src: url(../fonts/bebasneue/bebasneueregular.ttf);
+}
+
+@font-face{
+    font-family: 'bebasneue bold';
+    src: url(../fonts/bebasneue/bebasneuebold.ttf);
+}
+
+
+@font-face{
+    font-family: 'HelveticaNeue';
+    src: url(../fonts/HelveticaNeue/HelveticaNeueCyr-Light.ttf);
+}
+
+@font-face{
+    font-family: 'HelveticaNeue bold';
+    src: url(../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'Museo';
+    src: url(../fonts/Museo/MuseoSansCyrl-300.ttf);
+}
+
+@font-face{
+    font-family: 'Museo bold';
+    src: url(../fonts/Museo/MuseoSansCyrl-900.ttf);
+}
+
+
