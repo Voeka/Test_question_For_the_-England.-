@@ -11,8 +11,8 @@
     <header>
         <div class="yellow-blur">
             <img src="img/granos-cafe_left.png" class="header-left" alt="Левые зёрна">
-            <img src="img/granos-cafe_right.png" class="header-right" alt="Правые зёрна">
-            <img src="img/person.png" class="header-person" alt="Человек">
+            <img src="img/cofeboy.png" class="header-right" alt="Правые зёрна">
+            <!-- <img src="img/person.png" class="header-person" alt="Человек"> -->
         
             <div class="header-content">
                 
@@ -61,11 +61,15 @@
         <div class="choices">
             <div class="choice">
                 <h2>Один курс</h2>
-                <p class="big">10 900 ₽</p>
-                <p class="old-price">24 900 ₽</p>
-                <p class="discount-percentage">56%</p>
+                <div class="for-price">
+                    <p class="big">10 900 ₽</p>
+                    <p class="discount-percentage">56%</p>
+                </div>
                 
-                <ul>
+                <p class="old-price">24 900 ₽</p>
+               
+                
+                <ul class="list">
                     <li>2 месяца обучения</li>
                     <li>Грамматическая выжимка</li>
                     <li>Разговорный тренажёр</li>
@@ -94,21 +98,21 @@
 
         </div>
 
-        <img src="img/Spesial.jpg" alt="Специальное предложение">
+        <img src="img/Spesial.jpg" class="spesial" alt="Специальное предложение">
     </section>
     <!-- Конец секции  уже 20:00-->
     <!-- Начало формы -->
-    <section>
+    <section class="think">
         <h1>Ещё думаете?</h1>
 
-        <p>
+        <p class="p">
             Записывайтесь на бесплатный урок и попробуйте сами, это поможет принять решение 
         </p>
         
         <form action="" method="post">
             <input type="text" name="name" placeholder="Введите ваше имя">
             <input type="tel" name="tel" placeholder="Введите ваш телефон">
-            <input type="email" name="email" placeholder="email">
+            <input type="email" name="email" placeholder="Введите ваш email">
             <input type="submit" value="записаться">
             <p class="litle"> Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</p>
         </form>
@@ -116,10 +120,10 @@
     </section>
     <!-- Конец формы -->
     <footer>
-    <a href="#logo">
-        <img src="img/icon_footer.png" alt="Логотип"> English
+    <a href="#logo" class="footer-logo">
+        <img src="img/icon_footer.png" align="center" alt="Логотип"> English
     </a>
-    <p>2015 - 2021 © English. Все права защищены. <br>
+    <p class="bigee">2015 - 2021 © English. Все права защищены. <br>
          Политика конфиденциальности         <br>
          Соглашение об обработке персональных данных</p>
 
@@ -127,7 +131,7 @@
         ОГРН: 000000000000 | ИНН: 000000000 | КПП: 000000000
     </p>
     
-    <div>
+    <div class="social">
         <a href="#VK"><img src="img/vk.png" alt="Ссылка в ВК"></a>
         <a href="#TG"><img src="img/tg.png" alt="Ссылка в Телеграмм"></a>
     </div>
