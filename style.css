@@ -1,0 +1,334 @@
+*{
+    font-family: 'HelveticaNeue', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Начал в 20:20 */
+
+header{
+    width: 100%;
+    height: 50vw;
+    background-image: url(../img/header_BG.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-logo *{
+    height: 5vw;
+    font-size: 3vw;
+}
+
+
+
+.yellow-blur{
+    background-color: rgba(254, 207, 0, 0.83);
+    width: 100%;
+    height: 100%;
+}
+
+.header-left, .header-right, .header-person{
+    position: absolute;
+    top: 0;
+    z-index:1;
+}
+
+.header-left{
+    height: 50vw;
+}
+
+.header-right{
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 50vw;
+}
+
+/* .header-person{
+    left: auto;
+    right: 5%;
+    top: 3%;
+    bottom: 0;
+    width: 30vw;
+} */
+
+.header-content{
+    z-index: 100;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    
+}
+
+header a{
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #18193F;
+    font-family: 'HelveticaNeue bold';
+    
+}
+/* AND THE WATER'S RISING */
+
+header h1{
+    width: 60%;
+    font-size: 3vw;
+    font-family: 'Museo';
+    margin-bottom: 0.5vw;
+}
+
+.next{
+    font-family: "Museo";
+    font-size: 2.7vw;
+    width: 50%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.stock{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.stock-content{
+    margin-right: 2vw;
+    padding: 0.1rem 0.5rem;
+    border-radius: 1rem;
+    width: 20vw;
+    background-color: rgba(66, 66, 66, 0.795);
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.stock-content p{
+    margin: auto 0 auto 0;
+    color: white;
+    font-size: 2vw;
+}
+
+.stock-content-smaller p{
+    font-size: 1.5vw;
+}
+
+.stock-content-smaller b{
+    color: #D2E400;
+    font-size: 1.3vw;
+}
+
+.stock-content-smaller{
+    margin: 1.5vw;
+    
+    
+    font-size: 2vw;
+}
+
+.buttons{
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.button1,.button2{
+    width: 15vw;
+    height: 5vw;
+    border-radius: 5px;
+    margin-right: 1rem;
+    font-size: 2vw;
+    
+}
+
+.button1{
+    background-color: #E10000;
+    color: white;
+    border: none;
+}
+
+.button1:hover{
+    background-color: #b30000;
+}
+
+.button2{
+    background-color: #e1000000;
+    color: black;
+}
+
+.button2:hover{
+    background-color: #83838352;
+
+}
+
+/* Секция */
+
+.make_choice{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.make_choice h1{
+    font-size: 3vw;
+
+}
+
+.choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.choice{
+    border: 1px solid #4848485b;
+    border-radius: 5px;
+    width: 20vw;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.choice h2{
+    font-family: 'HelveticaNeue';
+    font-size: 3vw;
+}
+
+.big{
+    font-size: 4vw;
+    font-family: 'HelveticaNeue bold';
+    margin-top: 0;
+    margin-bottom: 0;
+    text-wrap: nowrap;
+}
+
+.for-price{
+    display: flex;
+    flex-direction: row;
+}
+
+.old-price{
+    text-align: left;
+    font-size: 2vw;
+    top: -10%;
+    margin-top: -10%;
+    text-decoration: line-through red;
+    color: #A7ACBF;
+}
+
+.discount-percentage{
+    
+    position:relative;
+    left: auto;
+    right: 2vw;
+    top: 1vw;
+    height: 2.5vw;
+    width: 5vw;
+    font-size: 2vw;
+    text-align: center;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    color: white;
+    background-color: red;
+}
+
+ul{
+    padding-left: 1vw;
+}
+
+.list li:first-child, .list li:last-child{
+    color: #1B002F;
+    font-family: 'HelveticaNeue bold';
+}
+
+li{
+    list-style: url(../img/Li.png);
+    text-align: left;
+    font-size: 1.2vw;
+}
+
+
+.Prepayment{
+    text-align: left;
+    font-size: 1.5vw;
+    color: #A7ACBF;
+    margin-bottom: 0;
+}
+
+.Prepayment-price{
+    text-align: left;
+    font-size: 2vw;
+    color: #1B002F;
+    margin-top: 0;
+}
+
+.choice button{
+    width: 90%;
+    padding: 10%;
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 1vw auto;
+    border-radius: 0.3rem;
+    border: 0;
+    background-color: #E10000;
+    color: white;
+}
+
+
+
+
+.spesial{
+    width: 60%
+}
+
+
+
+
+
+
+
+
+
+
+/* Шрифты */
+
+
+@font-face{
+    font-family: 'bebasneue';
+    src: url(../fonts/bebasneue/bebasneueregular.ttf);
+}
+
+@font-face{
+    font-family: 'bebasneue bold';
+    src: url(../fonts/bebasneue/bebasneuebold.ttf);
+}
+
+
+@font-face{
+    font-family: 'HelveticaNeue';
+    src: url(../fonts/HelveticaNeue/HelveticaNeueCyr-Light.ttf);
+}
+
+@font-face{
+    font-family: 'HelveticaNeue bold';
+    src: url(../fonts/HelveticaNeue/HelveticaNeueCyr-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'Museo';
+    src: url(../fonts/Museo/MuseoSansCyrl-300.ttf);
+}
+
+@font-face{
+    font-family: 'Museo bold';
+    src: url(../fonts/Museo/MuseoSansCyrl-900.ttf);
+}
+
+
