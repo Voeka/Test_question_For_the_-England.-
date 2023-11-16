@@ -11,12 +11,19 @@ body{
 
 header{
     width: 100%;
-    height: 50rem;
+    height: 50vw;
     background-image: url(../img/header_BG.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.header-logo *{
+    height: 5vw;
+    font-size: 3vw;
+}
+
+
 
 .yellow-blur{
     background-color: rgba(254, 207, 0, 0.83);
@@ -30,20 +37,25 @@ header{
     z-index:1;
 }
 
+.header-left{
+    height: 50vw;
+}
+
 .header-right{
     left: auto;
     right: 0;
     top: 0;
     bottom: 0;
-    height: 800px;
+    height: 50vw;
 }
 
-.header-person{
+/* .header-person{
     left: auto;
-    right: 5rem;
-    top: 7rem;
+    right: 5%;
+    top: 3%;
     bottom: 0;
-}
+    width: 30vw;
+} */
 
 .header-content{
     z-index: 100;
@@ -67,14 +79,17 @@ header a{
 
 header h1{
     width: 60%;
-    font-size: 3em;
+    font-size: 3vw;
     font-family: 'Museo';
+    margin-bottom: 0.5vw;
 }
 
 .next{
     font-family: "Museo";
-    font-size: 2em;
+    font-size: 2.7vw;
     width: 50%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
 }
 
 .stock{
@@ -84,10 +99,10 @@ header h1{
 }
 
 .stock-content{
-    margin-right: 2rem;
-    padding: 0.1rem 1rem;
+    margin-right: 2vw;
+    padding: 0.1rem 0.5rem;
     border-radius: 1rem;
-    width: 15rem;
+    width: 20vw;
     background-color: rgba(66, 66, 66, 0.795);
     display: flex;
     flex-direction: row;
@@ -97,35 +112,38 @@ header h1{
 .stock-content p{
     margin: auto 0 auto 0;
     color: white;
-    font-size: 4rem;
+    font-size: 2vw;
 }
 
 .stock-content-smaller p{
-    font-size: 1.4rem;
+    font-size: 1.5vw;
 }
 
 .stock-content-smaller b{
     color: #D2E400;
-    font-size: 1rem;
+    font-size: 1.3vw;
 }
 
 .stock-content-smaller{
-    margin: 1rem;
+    margin: 1.5vw;
     
     
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 .buttons{
-    margin-top: 3rem;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 }
 
 .button1,.button2{
-    width: 17rem;
-    height: 4rem;
+    width: 15vw;
+    height: 5vw;
     border-radius: 5px;
     margin-right: 1rem;
-    font-size: 1.2rem;
+    font-size: 2vw;
     
 }
 
@@ -135,9 +153,18 @@ header h1{
     border: none;
 }
 
+.button1:hover{
+    background-color: #b30000;
+}
+
 .button2{
     background-color: #e1000000;
     color: black;
+}
+
+.button2:hover{
+    background-color: #83838352;
+
 }
 
 /* Секция */
@@ -149,7 +176,7 @@ header h1{
 }
 
 .make_choice h1{
-    font-size: 3rem;
+    font-size: 3vw;
 
 }
 
@@ -162,18 +189,104 @@ header h1{
 
 .choice{
     border: 1px solid #4848485b;
-    width: 20%;
+    border-radius: 5px;
+    width: 20vw;
     padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.choice h2{
+    font-family: 'HelveticaNeue';
+    font-size: 3vw;
+}
+
+.big{
+    font-size: 4vw;
+    font-family: 'HelveticaNeue bold';
+    margin-top: 0;
+    margin-bottom: 0;
+    text-wrap: nowrap;
+}
+
+.for-price{
+    display: flex;
+    flex-direction: row;
+}
+
+.old-price{
+    text-align: left;
+    font-size: 2vw;
+    top: -10%;
+    margin-top: -10%;
+    text-decoration: line-through red;
+    color: #A7ACBF;
+}
+
+.discount-percentage{
     
+    position:relative;
+    left: auto;
+    right: 2vw;
+    top: 1vw;
+    height: 2.5vw;
+    width: 5vw;
+    font-size: 2vw;
+    text-align: center;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    color: white;
+    background-color: red;
+}
+
+ul{
+    padding-left: 1vw;
+}
+
+.list li:first-child, .list li:last-child{
+    color: #1B002F;
+    font-family: 'HelveticaNeue bold';
+}
+
+li{
+    list-style: url(../img/Li.png);
+    text-align: left;
+    font-size: 1.2vw;
+}
+
+
+.Prepayment{
+    text-align: left;
+    font-size: 1.5vw;
+    color: #A7ACBF;
+    margin-bottom: 0;
+}
+
+.Prepayment-price{
+    text-align: left;
+    font-size: 2vw;
+    color: #1B002F;
+    margin-top: 0;
+}
+
+.choice button{
+    width: 90%;
+    padding: 10%;
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 1vw auto;
+    border-radius: 0.3rem;
+    border: 0;
+    background-color: #E10000;
+    color: white;
 }
 
 
 
 
-
-
-
-
+.spesial{
+    width: 60%
+}
 
 
 
